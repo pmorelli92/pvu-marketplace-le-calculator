@@ -21,7 +21,7 @@ function addElement(divElement, elementClass, elementText) {
 
 function calculateDays(divElement) {
     let values = parseElement(divElement)
-    let daysText = (values.hours / 24).toFixed(2) + " days"
+    let daysText = "Days: " + (values.hours / 24).toFixed(2)
     let daysClass = "le days-calculated"
     addElement(divElement, daysClass, daysText)
 }
